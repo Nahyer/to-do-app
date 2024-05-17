@@ -16,7 +16,6 @@ document.getElementById('todo-form').addEventListener('submit', function(event) 
         checkbox.addEventListener('click', function() {
             if (this.checked) {
                 todoText.style.textDecoration = 'line-through';
-                updateItemsLeft();
             } else {
                 todoText.style.textDecoration = 'none';
             }
@@ -24,6 +23,7 @@ document.getElementById('todo-form').addEventListener('submit', function(event) 
         div.appendChild(checkbox);
         div.appendChild(todoText);
         todoText.textContent = newTodo;
+        todoText.style.marginBlockStart= '10px';
 
         var div1 =document.getElementById('todo-list');
         div1.appendChild(div);
