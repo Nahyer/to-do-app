@@ -1,6 +1,10 @@
 .todo-checkbox:checked+.todo-text {
     text-decoration: line-through;
 }
+.selected{
+    color: hsl(220, 98%, 61%);
+
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
@@ -19,6 +23,11 @@ h1{
     top: 230px;
     left: 750px;
 
+}
+.todo-item img{
+    position: relative;
+    top: 230px;
+    left: 750px;
 }
 .toh {
     margin-bottom: 10px;
@@ -39,15 +48,7 @@ body {
     /* background-size: cover, cover; */
     background-color: hsl(235, 21%, 11%);
     margin: 10rem;
-    /* padding: ; */
-    /* font-family: 'Josefin Sans', sans-serif;
-    
-    color: white;
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; */
+  
 }
 .container{
     display: flex;
@@ -65,6 +66,7 @@ body {
 .tabs{
     display: flex;
     flex-direction: row; 
+
     /* background-color: aliceblue; */
    
 }
