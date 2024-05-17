@@ -1,0 +1,87 @@
+.todo-checkbox:checked+.todo-text {
+    text-decoration: line-through;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+input[type="text"] {
+width: 100%;
+background-color: hsl(235, 24%, 19%);
+}
+
+
+
+.toh img{
+ position: relative;
+    top: 0;
+    left: 450px
+}
+.toh {
+    margin-bottom: 10px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./images/bg-desktop-light.jpg');
+        
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    /* background-size: cover, cover; */
+    background-color: hsl(235, 21%, 11%);
+    margin: 10rem;
+    /* padding: ; */
+    /* font-family: 'Josefin Sans', sans-serif;
+    
+    color: white;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; */
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;    
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+   
+}
+.tabs{
+    display: flex;
+    flex-direction: row; 
+    /* background-color: aliceblue; */
+   
+}
+.filters{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    button {
+        background: none;
+        border: none;
+        padding: 0;
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+
+/* Bright Blue: hsl(220, 98%, 61%)
+Check Background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%) */
