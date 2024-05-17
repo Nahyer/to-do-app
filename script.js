@@ -13,9 +13,10 @@ document.getElementById('todo-form').addEventListener('submit', function(event) 
         let checkbox = document.createElement('input');
         let todoText = document.createElement('span');
         checkbox.type = 'checkbox';
-        checkbox.addEventListener('change', function() {
+        checkbox.addEventListener('click', function() {
             if (this.checked) {
                 todoText.style.textDecoration = 'line-through';
+                updateItemsLeft();
             } else {
                 todoText.style.textDecoration = 'none';
             }
@@ -56,8 +57,5 @@ filterItems.forEach(function(filterItem) {
       
         this.classList.add('selected');
 
-      
-        let filterAction = this.textContent;
-        console.log('Filter action:', filterAction);
     });
 });
